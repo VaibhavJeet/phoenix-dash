@@ -1,0 +1,26 @@
+name: app_ui
+description: App UI Package of the Super Dash game.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.10.1
+  flutter: '>=3.29.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0
+
+flutter:
+  fonts:
+    - family: Google Sans
+      fonts:
+        - asset: assets/fonts/GoogleSansText-Regular.ttf
+        - asset: assets/fonts/GoogleSansText-Bold.ttf
+          weight: 700

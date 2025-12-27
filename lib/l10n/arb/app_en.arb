@@ -1,0 +1,216 @@
+{
+    "@@locale": "en",
+    "gameIntroPageHeadline": "Fly into Super Dash, avoid the bugs, collect points, and see how far you can go!",
+    "@gameIntroPageHeadline": {
+        "description": "Text shown in the Headline of the Game Info Page"
+    },
+    "gameIntroPagePlayButtonText": "Play",
+    "@gameIntroPagePlayButtonText": {
+        "description": "Text shown in the Play button of the Game Info Page"
+    },
+    "gameInstructionsPageAutoRunTitle": "Dash Auto-runs",
+    "@gameInstructionsPageAutoRunTitle": {
+        "description": "Text shown in the title of the auto run instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageAutoRunDescription": "Welcome to Super Dash. In this game Dash runs automatically.",
+    "@gameInstructionsPageAutoRunDescription": {
+        "description": "Text shown in the description of the auto run instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageTapToJumpTitle": "Tap to Jump",
+    "@gameInstructionsPageTapToJumpTitle": {
+        "description": "Text shown in the title of the tap to jump instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageTapToJumpDescription": "Tap the screen to make Dash jump.",
+    "@gameInstructionsPageTapToJumpDescription": {
+        "description": "Text shown in the description of the tap to jump instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageTapToJumpDescriptionDesktop": "Press spacebar to make Dash jump.",
+    "@gameInstructionsPageTapToJumpDescriptionDesktop": {
+        "description": "Text shown in the description of the tap to jump instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageCollectEggsAcornsTitle": "Collect Eggs & Acorns",
+    "@gameInstructionsPageCollectEggsAcornsTitle": {
+        "description": "Text shown in the title of the collect eggs and acorns instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageCollectEggsAcornsDescription": "Get points by collecting eggs and acorns in the stage.",
+    "@gameInstructionsPageCollectEggsAcornsDescription": {
+        "description": "Text shown in the description of the collect eggs and acorns instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPagePowerfulWingsTitle": "Powerful Wings",
+    "@gameInstructionsPagePowerfulWingsTitle": {
+        "description": "Text shown in the title of the powerful wings instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPagePowerfulWingsDescription": "Collect the golden feather to power up Dash with Flutter. While in midair, tap to do a double jump and see Dash fly!",
+    "@gameInstructionsPagePowerfulWingsDescription": {
+        "description": "Text shown in the description of the powerful wings instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageLevelGatesTitle": "Level Gates",
+    "@gameInstructionsPageLevelGatesTitle": {
+        "description": "Text shown in the title of the level gates instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageLevelGatesDescription": "Advance through gates to face tougher challenges at higher stages.",
+    "@gameInstructionsPageLevelGatesDescription": {
+        "description": "Text shown in the description of the level gates instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageAvoidBugsTitle": "Avoid Bugs",
+    "@gameInstructionsPageAvoidBugsTitle": {
+        "description": "Text shown in the title of the avoid bugs instruction of the Game Instructions Overlay"
+    },
+    "gameInstructionsPageAvoidBugsDescription": "No one likes bugs! Jump to dodge them and avoid taking damage.",
+    "@gameInstructionsPageAvoidBugsDescription": {
+        "description": "Text shown in the description of the avoid bugs instruction of the Game Instructions Overlay"
+    },
+    "mobileAppsComingSoon": "Mobile Apps Coming Soon",
+    "@mobileAppsComingSoon": {
+        "description": "Title shown in the Game Info Page for mobile devices joining from a browser"
+    },
+    "mobileAppsComingSoonGrabThe": "Grab the ",
+    "@mobileAppsComingSoonGrabThe": {
+        "description": "Description shown in the Game Info Page for mobile devices joining from a browser"
+    },
+    "mobileAppsComingSoonMobileSourceCode": "mobile source code ",
+    "@mobileAppsComingSoonMobileSourceCode": {
+        "description": "Description shown in the Game Info Page for mobile devices joining from a browser"
+    },
+    "mobileAppsComingSoonDescription": "in the repo and look for the apps available for download in stores soon! Open this link on a desktop web browser to play today.",
+    "@mobileModeUnavailableDescription": {
+        "description": "Description shown in the Game Info Page for mobile devices joining from a browser"
+    },
+    "superDash": "Super Dash",
+    "@superDash": {
+        "description": "Game name"
+    },
+    "howItsMade": "How it's made",
+    "@howItsMade": {
+        "description": "Text shown in the game info page"
+    },
+    "aboutSuperDash": "About Super Dash",
+    "@aboutSuperDash": {
+        "description": "Text shown in the game info popup"
+    },
+    "learn": "Learn ",
+    "@learn": {
+        "description": "Text shown in the game info popup"
+    },
+    "howWeBuiltSuperDash": "how we built Super Dash",
+    "@howWeBuiltSuperDash": {
+        "description": "Text shown in the game info popup"
+    },
+    "inFlutterAndGrabThe": " in Flutter and grab the ",
+    "@inFlutterAndGrabThe": {
+        "description": "Text shown in the game info popup"
+    },
+    "openSourceCode": "open source code.",
+    "@openSourceCode": {
+        "description": "Text shown in the game info popup"
+    },
+    "otherLinks": "Other Links",
+    "@otherLinks": {
+        "description": "Text shown in the game info popup"
+    },
+    "flutterGames": "Flutter Games",
+    "@flutterGames": {
+        "description": "Text shown in the game info popup"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "@privacyPolicy": {
+        "description": "Text shown in the game info popup"
+    },
+    "termsOfService": "Terms of Service",
+    "@termsOfService": {
+        "description": "Text shown in the game info popup"
+    },
+    "enter": "Enter",
+    "@enter": {
+        "description": "Text shown in the score submission page"
+    },
+    "initialsBlacklistedMessage": "Keep it PG, use different initials",
+    "@initialsBlacklistedMessage": {
+        "description": "Text shown in the score submission page"
+    },
+    "initialsErrorMessage": "Please enter three initials",
+    "@initialsErrorMessage": {
+        "description": "Text shown in the score submission page"
+    },
+    "scoreSubmissionErrorMessage": "There was an error submitting your score",
+    "@scoreSubmissionErrorMessage": {
+        "description": "Text shown in the score submission page"
+    },
+    "shareYourScore": "Share your Super Dash score and challenge your friends to do more!",
+    "@shareYourScore": {
+        "description": "Text shown in the share page"
+    },
+    "pts": "Pts",
+    "@pts": {
+        "description": "Text shown in the share page"
+    },
+    "shareOn": "Share on:",
+    "@shareOn": {
+        "description": "Text shown in the share page"
+    },
+    "share": "Share",
+    "@share": {
+        "description": "Text shown in the share page"
+    },
+    "seeTheRanking": "See the ranking",
+    "@seeTheRanking": {
+        "description": "Text shown in the share page"
+    },
+    "gameOver": "Game over!",
+    "@gameOver": {
+        "description": "Text shown in the game over page"
+    },
+    "betterLuckNextTime": "Better luck next time.",
+    "@betterLuckNextTime": {
+        "description": "Text shown in the game over page"
+    },
+    "totalScore": "Total Score",
+    "@totalScore": {
+        "description": "Text shown in the game over page"
+    },
+    "submitScore": "Submit score",
+    "@submitScore": {
+        "description": "Text shown in the game over page"
+    },
+    "playAgain": "Play again",
+    "@playAgain": {
+        "description": "Text shown in the game over page"
+    },
+    "gameScoreLabel": "{points} Pts",
+    "@gameScoreLabel": {
+        "description": "Text shown on the game score label",
+        "placeholders": {
+            "points": {
+                "type": "int"
+            }
+        }
+    },
+    "leaderboardPageLeaderboardHeadline": "Leaderboard",
+    "@leaderboardPageLeaderboardHeadline": {
+        "description": "Text shown in the leaderboard page headline"
+    },
+    "leaderboardPageLeaderboardErrorText": "There was an error while fetching the leaderboard.",
+    "@leaderboardPageLeaderboardErrorText": {
+        "description": "Text shown in the leaderboard page when there is an error"
+    },
+    "leaderboardPageLeaderboardNoEntries": "No entries",
+    "@leaderboardPageLeaderboardNoEntries": {
+        "description": "Text shown in the leaderboard page when there are no entries"
+    },
+    "leaderboardPageGoBackButton": "Go back",
+    "@leaderboardPageGoBackButton": {
+        "description": "Text shown in the leaderboard page go back button"
+    },
+    "tapToStart": "Tap/press Space to start",
+    "@tapToStart": {
+        "description": "Text shown in the game page"
+    },
+    "downloadAppMessage": "Fly into Super Dash, avoid the bugs, collect points, and see how far you can go!",
+    "@downloadAppMessage": {
+        "description": "Text shown in the download mobile app page"
+    },
+    "downloadAppLabel": "Download the app",
+    "@downloadAppLabel": {
+        "description": "Button lable for the app download"
+    }
+}
