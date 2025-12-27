@@ -5,7 +5,7 @@ import 'package:flame/effects.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 import 'package:flutter/material.dart';
 import 'package:leap/leap.dart';
-import 'package:super_dash/game/super_dash_game.dart';
+import 'package:phoenix_dash/game/super_dash_game.dart';
 
 enum ItemType {
   acorn(10),

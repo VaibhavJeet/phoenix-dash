@@ -11,9 +11,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:leap/leap.dart';
-import 'package:super_dash/audio/audio.dart';
-import 'package:super_dash/game/game.dart';
-import 'package:super_dash/score/score.dart';
+import 'package:phoenix_dash/audio/audio.dart';
+import 'package:phoenix_dash/game/game.dart';
+import 'package:phoenix_dash/score/score.dart';
 
 bool _tsxPackingFilter(Tileset tileset) {
   return !(tileset.source ?? '').startsWith('anim');

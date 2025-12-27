@@ -5,9 +5,9 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:super_dash/l10n/l10n.dart';
-import 'package:super_dash/score/input_initials/formatters/formatters.dart';
-import 'package:super_dash/score/score.dart';
+import 'package:phoenix_dash/l10n/l10n.dart';
+import 'package:phoenix_dash/score/input_initials/formatters/formatters.dart';
+import 'package:phoenix_dash/score/score.dart';
 
 class InitialsFormView extends StatefulWidget {
   const InitialsFormView({super.key});

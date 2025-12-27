@@ -3,12 +3,12 @@ import 'package:flow_builder/flow_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:super_dash/game/game.dart';
-import 'package:super_dash/game_intro/game_intro.dart';
-import 'package:super_dash/gen/assets.gen.dart';
-import 'package:super_dash/l10n/l10n.dart';
-import 'package:super_dash/score/score.dart';
-import 'package:super_dash/utils/utils.dart';
+import 'package:phoenix_dash/game/game.dart';
+import 'package:phoenix_dash/game_intro/game_intro.dart';
+import 'package:phoenix_dash/gen/assets.gen.dart';
+import 'package:phoenix_dash/l10n/l10n.dart';
+import 'package:phoenix_dash/score/score.dart';
+import 'package:phoenix_dash/utils/utils.dart';
 
 class GameOverPage extends StatelessWidget {
   const GameOverPage({super.key});

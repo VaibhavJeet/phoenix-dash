@@ -5,13 +5,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
 import 'package:leaderboard_repository/leaderboard_repository.dart';
-import 'package:super_dash/app/app.dart';
-import 'package:super_dash/audio/audio.dart';
-import 'package:super_dash/bootstrap.dart';
-import 'package:super_dash/firebase_options_dev.dart';
-import 'package:super_dash/settings/persistence/persistence.dart';
-import 'package:super_dash/settings/settings.dart';
-import 'package:super_dash/share/share.dart';
+import 'package:phoenix_dash/app/app.dart';
+import 'package:phoenix_dash/audio/audio.dart';
+import 'package:phoenix_dash/bootstrap.dart';
+import 'package:phoenix_dash/firebase_options_dev.dart';
+import 'package:phoenix_dash/settings/persistence/persistence.dart';
+import 'package:phoenix_dash/settings/settings.dart';
+import 'package:phoenix_dash/share/share.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

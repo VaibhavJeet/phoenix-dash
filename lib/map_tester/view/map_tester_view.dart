@@ -5,10 +5,10 @@ import 'package:flame/game.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:super_dash/filesytem_asset_bundle/filesystem_asset_bundle.dart';
-import 'package:super_dash/game/game.dart';
-import 'package:super_dash/map_tester/map_tester.dart';
-import 'package:super_dash/settings/settings_controller.dart';
+import 'package:phoenix_dash/filesytem_asset_bundle/filesystem_asset_bundle.dart';
+import 'package:phoenix_dash/game/game.dart';
+import 'package:phoenix_dash/map_tester/map_tester.dart';
+import 'package:phoenix_dash/settings/settings_controller.dart';
 
 typedef GetDirectoryPath = Future<String?> Function();
 

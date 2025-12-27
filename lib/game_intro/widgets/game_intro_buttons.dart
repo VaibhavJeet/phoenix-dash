@@ -2,9 +2,9 @@ import 'package:app_ui/app_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:super_dash/game_intro/game_intro.dart';
-import 'package:super_dash/leaderboard/leaderboard.dart';
-import 'package:super_dash/settings/settings_controller.dart';
+import 'package:phoenix_dash/game_intro/game_intro.dart';
+import 'package:phoenix_dash/leaderboard/leaderboard.dart';
+import 'package:phoenix_dash/settings/settings_controller.dart';
 
 class AudioButton extends StatelessWidget {
   const AudioButton({super.key});

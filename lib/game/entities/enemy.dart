@@ -3,7 +3,7 @@ import 'package:flame_tiled/flame_tiled.dart';
 import 'package:flutter/material.dart';
 import 'package:leap/leap.dart';
 import 'package:pathxp/pathxp.dart';
-import 'package:super_dash/game/game.dart';
+import 'package:phoenix_dash/game/game.dart';
 
 enum EnemyType {
   bettle,

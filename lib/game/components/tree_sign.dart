@@ -3,7 +3,7 @@ import 'dart:ui';
 
 import 'package:flame/components.dart';
 import 'package:flame/text.dart';
-import 'package:super_dash/game/super_dash_game.dart';
+import 'package:phoenix_dash/game/super_dash_game.dart';
 
 class TreeSign extends TextComponent with HasGameRef<SuperDashGame> {
   TreeSign({

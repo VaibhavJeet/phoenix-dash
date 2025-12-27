@@ -30,17 +30,17 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.verygoodventures.super_dash"
+    namespace "com.phoenixgames.phoenix_dash"
     compileSdk 36
     ndkVersion flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
 
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = '21'
     }
 
     sourceSets {
@@ -48,7 +48,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.verygoodventures.super_dash"
+        applicationId "com.phoenixgames.phoenix_dash"
         minSdk 26
         targetSdk 35
         versionCode flutterVersionCode.toInteger()
@@ -69,16 +69,16 @@ android {
         development {
             dimension "default"
             applicationIdSuffix ".dev"
-            resValue "string", "app_name", "Super Dash Dev"
+            resValue "string", "app_name", "Phoenix Dash Dev"
         }
         staging {
             dimension "default"
             applicationIdSuffix ".stg"
-            resValue "string", "app_name", "Super Dash Stg"
+            resValue "string", "app_name", "Phoenix Dash Stg"
         }
         production {
             dimension "default"
-            resValue "string", "app_name", "Super Dash"
+            resValue "string", "app_name", "Phoenix Dash"
         }
     }
 

@@ -3,7 +3,7 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:super_dash/settings/persistence/persistence.dart';
+import 'package:phoenix_dash/settings/persistence/persistence.dart';
 
 /// An implementation of [SettingsPersistence] that uses
 /// `package:shared_preferences`.

@@ -4,7 +4,7 @@ import 'dart:ui';
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flame_behaviors/flame_behaviors.dart';
-import 'package:super_dash/game/game.dart';
+import 'package:phoenix_dash/game/game.dart';
 
 enum DashState {
   idle,

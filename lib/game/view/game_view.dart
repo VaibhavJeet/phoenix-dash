@@ -1,9 +1,9 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:super_dash/audio/audio.dart';
-import 'package:super_dash/game/game.dart';
-import 'package:super_dash/game_intro/game_intro.dart';
+import 'package:phoenix_dash/audio/audio.dart';
+import 'package:phoenix_dash/game/game.dart';
+import 'package:phoenix_dash/game_intro/game_intro.dart';
 
 class Game extends StatelessWidget {
   const Game({super.key});

@@ -3,9 +3,9 @@ import 'dart:ui';
 import 'package:app_ui/app_ui.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:super_dash/constants/constants.dart';
-import 'package:super_dash/gen/assets.gen.dart';
-import 'package:super_dash/l10n/l10n.dart';
+import 'package:phoenix_dash/constants/constants.dart';
+import 'package:phoenix_dash/gen/assets.gen.dart';
+import 'package:phoenix_dash/l10n/l10n.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class GameInfoDialog extends StatelessWidget {

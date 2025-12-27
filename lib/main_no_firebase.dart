@@ -2,12 +2,12 @@ import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-import 'package:super_dash/app/app.dart';
-import 'package:super_dash/audio/audio.dart';
-import 'package:super_dash/mock_repositories.dart';
-import 'package:super_dash/settings/persistence/persistence.dart';
-import 'package:super_dash/settings/settings.dart';
-import 'package:super_dash/share/share.dart';
+import 'package:phoenix_dash/app/app.dart';
+import 'package:phoenix_dash/audio/audio.dart';
+import 'package:phoenix_dash/mock_repositories.dart';
+import 'package:phoenix_dash/settings/persistence/persistence.dart';
+import 'package:phoenix_dash/settings/settings.dart';
+import 'package:phoenix_dash/share/share.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();

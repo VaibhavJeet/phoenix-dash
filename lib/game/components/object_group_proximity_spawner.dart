@@ -5,7 +5,7 @@ import 'package:flame/components.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 import 'package:ordered_set/comparing.dart';
 import 'package:ordered_set/ordered_set.dart';
-import 'package:super_dash/game/game.dart';
+import 'package:phoenix_dash/game/game.dart';
 
 typedef ObjectGroupProximitySpawner = PositionComponent Function({
   required TiledObject tiledObject,

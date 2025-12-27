@@ -1,7 +1,7 @@
 import 'package:flame/components.dart';
 import 'package:flame/effects.dart';
 import 'package:flutter/material.dart';
-import 'package:super_dash/game/super_dash_game.dart';
+import 'package:phoenix_dash/game/super_dash_game.dart';
 
 class CameraBounds extends PositionComponent {
   CameraBounds({
