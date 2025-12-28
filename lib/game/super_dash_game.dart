@@ -26,7 +26,7 @@ Paint _layerPaintFactory(double opacity) {
 }
 
 class SuperDashGame extends LeapGame
-    with TapDetector, HasKeyboardHandlerComponents {
+    with TapDetector, HasKeyboardHandlerComponents, HasTimeScale {
   SuperDashGame({
     required this.gameBloc,
     required this.audioController,
@@ -412,5 +412,15 @@ class SuperDashGame extends LeapGame
         ),
       ),
     );
+  }
+
+  @override
+  void update(double dt) {
+    super.update(dt);
+
+    // Tick combo timer
+    if (state.comboTimer > 0) {
+      gameBloc.add(GameComboTimerTick(deltaTime: dt));
+    }
   }
 }

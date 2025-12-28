@@ -107,7 +107,7 @@ class _MapTesterViewState extends State<MapTesterView> {
 
   void _updateSpeed(double value) {
     setState(() {
-      final newValue = (speed ?? Player.speed) + value;
+      final newValue = (speed ?? Player.baseSpeed) + value;
       speed = newValue;
       _setSpeed(newValue);
     });
@@ -291,7 +291,7 @@ class _SpeedLabel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      '${(speed ?? Player.speed).toStringAsFixed(2)}'
+      '${(speed ?? Player.baseSpeed).toStringAsFixed(2)}'
       ' (Tiles per second)',
       style: const TextStyle(color: Colors.black),
     );

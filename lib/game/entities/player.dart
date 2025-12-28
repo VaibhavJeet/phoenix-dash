@@ -16,8 +16,20 @@ class Player extends JumperCharacter<SuperDashGame> {
   });
 
   static const initialHealth = 1;
-  static const speed = 5.0;
+  static const baseSpeed = 5.0;
   static const jumpImpulse = .6;
+
+  /// Speed increase per level (5% per level, max 50% increase)
+  static const double speedIncreasePerLevel = 0.05;
+  static const double maxSpeedIncrease = 0.5;
+
+  /// Calculate speed based on current level
+  double get speed {
+    final level = gameRef.gameBloc.state.currentLevel;
+    final speedMultiplier = 1 +
+        (speedIncreasePerLevel * (level - 1)).clamp(0.0, maxSpeedIncrease);
+    return baseSpeed * speedMultiplier;
+  }
 
   final Vector2 levelSize;
   final Vector2 cameraViewport;
@@ -31,6 +43,26 @@ class Player extends JumperCharacter<SuperDashGame> {
   bool isPlayerInvincible = false;
   bool isPlayerTeleporting = false;
   bool isPlayerRespawning = false;
+
+  /// Coyote time - grace period after leaving a platform where jump is allowed
+  static const double _coyoteTimeDuration = 0.12; // 120ms grace period
+  double _coyoteTimer = 0;
+  bool _coyoteTimeActive = false;
+
+  /// Whether player can still jump within coyote time window
+  bool get canCoyoteJump => _coyoteTimeActive && _coyoteTimer > 0;
+
+  /// Start coyote time when player walks off a platform
+  void startCoyoteTime() {
+    _coyoteTimeActive = true;
+    _coyoteTimer = _coyoteTimeDuration;
+  }
+
+  /// Consume coyote time when player jumps
+  void consumeCoyoteTime() {
+    _coyoteTimeActive = false;
+    _coyoteTimer = 0;
+  }
 
   double? _gameOverTimer;
 
@@ -138,6 +170,23 @@ class Player extends JumperCharacter<SuperDashGame> {
   void update(double dt) {
     super.update(dt);
 
+    // Update walk speed based on current level (difficulty scaling)
+    walkSpeed = gameRef.tileSize * speed;
+
+    // Update coyote time timer
+    if (_coyoteTimeActive && _coyoteTimer > 0) {
+      _coyoteTimer -= dt;
+      if (_coyoteTimer <= 0) {
+        _coyoteTimeActive = false;
+      }
+    }
+
+    // Reset coyote time when landing
+    if (isOnGround) {
+      _coyoteTimeActive = false;
+      _coyoteTimer = 0;
+    }
+
     if (_gameOverTimer != null) {
       _gameOverTimer = _gameOverTimer! - dt;
       if (_gameOverTimer! <= 0) {
@@ -215,13 +264,41 @@ class Player extends JumperCharacter<SuperDashGame> {
         final isAboveEnemy = playerBottom <= enemyTop + size.y * 0.5;
 
         if (isFalling && isAboveEnemy) {
+          // Get enemy position before removing
+          final enemyPosition = collision.position.clone();
+
           // Stomp the enemy - kill it and bounce
           collision.removeFromParent();
+
           // Give player a small bounce
           velocity.y = -minJumpImpulse * 0.7;
-          // Award points for killing enemy
-          gameRef.gameBloc.add(const GameScoreIncreased(by: 100));
+
+          // Get current combo count before incrementing (for display)
+          final currentCombo = gameRef.gameBloc.state.comboCount;
+
+          // Trigger stomp event (handles combo and score)
+          gameRef.gameBloc.add(const GameEnemyStomped());
+
+          // Play stomp sound
           gameRef.audioController.playSfx(Sfx.jump);
+
+          // Add visual effects
+          gameRef.world.add(
+            StompEffect(position: enemyPosition),
+          );
+
+          // Add screen shake
+          gameRef.add(ScreenShake());
+
+          // Add score popup (show new combo multiplier)
+          gameRef.world.add(
+            ScorePopup(
+              score: 100,
+              position: enemyPosition - Vector2(0, 20),
+              comboMultiplier: currentCombo + 1,
+            ),
+          );
+
           return;
         }
 

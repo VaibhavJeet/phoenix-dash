@@ -2,5 +2,8 @@ export 'camera_debugger.dart';
 export 'item_effect.dart';
 export 'object_group_proximity_spawner.dart';
 export 'player_camera_anchor.dart';
+export 'score_popup.dart';
+export 'screen_shake.dart';
+export 'stomp_effect.dart';
 export 'tree_sign.dart';
 export 'treehouse_front.dart';

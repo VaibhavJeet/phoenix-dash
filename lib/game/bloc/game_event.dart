@@ -37,3 +37,18 @@ final class GameSectionCompleted extends GameEvent {
   @override
   List<Object> get props => [sectionCount];
 }
+
+/// Event fired when player stomps an enemy
+final class GameEnemyStomped extends GameEvent {
+  const GameEnemyStomped();
+}
+
+/// Event fired to update combo timer (called from game update loop)
+final class GameComboTimerTick extends GameEvent {
+  const GameComboTimerTick({required this.deltaTime});
+
+  final double deltaTime;
+
+  @override
+  List<Object> get props => [deltaTime];
+}
