@@ -1,3 +1,6 @@
+<!-- social-banner -->
+![phoenix-dash banner](.github/social-banner.png)
+
 # Phoenix Dash
 
 An exciting endless runner platformer game built with Flutter and Flame game engine.
